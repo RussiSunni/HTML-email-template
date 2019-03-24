@@ -6,9 +6,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Travel email</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        .video-wrapper {display:none;}
+        @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px) 
+        {
+         .video-wrapper { display:block!important; }
+         .video-fallback { display:none!important; }
+        }
+         @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+           div[class^=video-wrapper] { display:block!important; }
+           div[class^=video-fallback] { display:none!important; }
+         }
+         #MessageViewBody .video-wrapper { display:block!important; }
+         #MessageViewBody .video-fallback { display:none!important; }
+       </style>
 </head>
 
-</html>
+
 
 <body style="margin: 0; padding: 0;">
     <table align="center" border="1" cellpadding="0" cellspacing="0" width="600">
@@ -33,8 +47,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 0 0 5px 0;">
-                                                    <h4>special 1</h4>
+                                                <td align="center" style="padding: 0 0 5px 0;">
+                                                    <h4>Paris</h4>
                                                     <a>book now</a>
                                                 </td>
                                             </tr>
@@ -52,8 +66,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 0 0 5px 0;">
-                                                    <h4>special 2</h4>
+                                                <td align="center" style="padding: 0 0 5px 0;">
+                                                    <h4>Venice</h4>
                                                     <a>book now</a>
                                                 </td>
                                             </tr>
@@ -76,8 +90,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 0 0 5px 0;">
-                                                    <h4>special 3</h4>
+                                                <td align="center" style="padding: 0 0 5px 0;">
+                                                    <h4>Mexico</h4>
                                                     <a>book now</a>
                                                 </td>
                                             </tr>
@@ -95,8 +109,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 0 0 5px 0;">
-                                                    <h4>special 4</h4>
+                                                <td align="center" style="padding: 0 0 5px 0;">
+                                                    <h4>Sydney</h4>
                                                     <a>book now</a>
                                                 </td>
                                             </tr>
@@ -110,8 +124,26 @@
             </td>
         </tr>
         <tr>
-            <td bgcolor="#ffffff" style="padding: 10px 10px 10px 10px;">
-                video testimonial
+            <td bgcolor="#ffffff" align="center" style="padding: 10px 10px 10px 10px;">
+
+                <div class="video-wrapper" style="display:none;">
+                    <video width="320" height="176" controls="controls"
+                        poster="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny_cover.jpg"
+                        src="https://www.w3schools.com/html/mov_bbb.mp4">
+                        <!-- fallback 1 -->
+                        <a href="https://www.emailonacid.com"><img height="176"
+                                src="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny-fallback.jpg"
+                                width="320" /></a>
+                    </video>
+                </div>
+
+                <!-- fallback section -->
+                <div class="video-fallback">
+                    <p>Fallback Content</p>
+                    <a href="https://www.emailonacid.com"><img height="176"
+                            src="https://www.emailonacid.com/images/blog_images/Emailology/2013/html5_video/bunny-fallback.jpg"
+                            width="320" /></a>
+                </div>
             </td>
         </tr>
         <tr>
@@ -164,14 +196,50 @@
                                 <tr>
                                     <td>
                                         <a href="http://www.twitter.com/">
-                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" height="30" width="30"><defs><style>.cls-1{fill:#4267b2;}.cls-2{fill:#fff;}</style></defs><title>f-ogo_RGB_HEX-100</title><path class="cls-1" d="M94.48,0h-89A5.52,5.52,0,0,0,0,5.52v89A5.52,5.52,0,0,0,5.52,100h47.9V61.33h-13V46.19h13V35.05c0-12.91,7.89-19.95,19.41-19.95a104.57,104.57,0,0,1,11.64.6V29.2H76.53c-6.27,0-7.49,3-7.49,7.35v9.64H84l-2,15.14H69V100H94.48A5.52,5.52,0,0,0,100,94.48v-89A5.52,5.52,0,0,0,94.48,0Z"/><path id="f" class="cls-2" d="M69,100V61.33h13l2-15.14H69V36.55c0-4.37,1.22-7.35,7.49-7.35h7.94V15.7a104.57,104.57,0,0,0-11.64-.6c-11.52,0-19.41,7-19.41,19.95V46.19h-13V61.33h13V100Z"/></svg>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 100 100" height="30" width="30">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: #4267b2;
+                                                        }
+
+                                                        .cls-2 {
+                                                            fill: #fff;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>f-ogo_RGB_HEX-100</title>
+                                                <path class="cls-1"
+                                                    d="M94.48,0h-89A5.52,5.52,0,0,0,0,5.52v89A5.52,5.52,0,0,0,5.52,100h47.9V61.33h-13V46.19h13V35.05c0-12.91,7.89-19.95,19.41-19.95a104.57,104.57,0,0,1,11.64.6V29.2H76.53c-6.27,0-7.49,3-7.49,7.35v9.64H84l-2,15.14H69V100H94.48A5.52,5.52,0,0,0,100,94.48v-89A5.52,5.52,0,0,0,94.48,0Z" />
+                                                <path id="f" class="cls-2"
+                                                    d="M69,100V61.33h13l2-15.14H69V36.55c0-4.37,1.22-7.35,7.49-7.35h7.94V15.7a104.57,104.57,0,0,0-11.64-.6c-11.52,0-19.41,7-19.41,19.95V46.19h-13V61.33h13V100Z" />
+                                            </svg>
 
                                         </a>
                                     </td>
                                     <td style="font-size: 0; line-height: 0;" width="5">&nbsp;</td>
                                     <td>
                                         <a href="http://www.twitter.com/">
-                                            <svg id="Logo_FIXED" data-name="Logo — FIXED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" height="30" width="30"><defs><style>.cls-1{fill:none;}.cls-2{fill:#1da1f2;}</style></defs><title>Twitter_Logo_Blue</title><rect class="cls-1" width="400" height="400"/><path class="cls-2" d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"/></svg>
+                                            <svg id="Logo_FIXED" data-name="Logo — FIXED"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" height="30"
+                                                width="30">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                        }
+
+                                                        .cls-2 {
+                                                            fill: #1da1f2;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>Twitter_Logo_Blue</title>
+                                                <rect class="cls-1" width="400" height="400" />
+                                                <path class="cls-2"
+                                                    d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" />
+                                            </svg>
                                         </a>
                                     </td>
                                 </tr>
@@ -185,4 +253,4 @@
         </tr>
     </table>
 </body>
-
+</html>
